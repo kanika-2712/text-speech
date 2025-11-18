@@ -6,7 +6,7 @@ import requests
 st.title("Text-to-Speech")
 
 text = st.text_area("Enter text to convert to speech:")
-st.slider("Stability", 0.0, 1.0, 0.5, 0.1, key="stability_slider")
+st.slider("Stability", 0.0, 1.0, 0.5, 0.4, key="stability_slider")
 st.slider("Similarity Boost", 0.0, 1.0, 0.8, 0.1, key="similarity_boost_slider")
 st.slider("Style", 0.0, 1.0, 0.0, 0.1, key="style_slider")
 use_speaker_boost = st.checkbox("Use Speaker Boost", value=True, key="use_speaker_boost")
